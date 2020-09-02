@@ -12,7 +12,13 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form2.ShowDialog()
-        Me.Close()
+        Dim frm2 As New Form2
+        frm2.Show()
+        Threading.Thread.Sleep(1000)
+        Close()
+    End Sub
+
+    Private Sub aknowledge_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CheckBox1.Select()
     End Sub
 End Class
