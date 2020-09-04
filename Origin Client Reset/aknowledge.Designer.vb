@@ -64,7 +64,7 @@ Partial Class aknowledge
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(97, 394)
+        Me.CheckBox1.Location = New System.Drawing.Point(98, 394)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(97, 17)
         Me.CheckBox1.TabIndex = 3

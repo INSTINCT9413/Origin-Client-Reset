@@ -1,0 +1,14 @@
+C:\Users\jacob\AppData\Local\Temporary Projects\Origin Client Reset\bin\Debug\Origin Client Reset.exe.config
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.exe.config
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.exe
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.pdb
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.xml
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.Form2.resources
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.Resources.resources
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.vbproj.GenerateResource.Cache
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.exe
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.xml
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.pdb
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.AboutBox1.resources
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.aknowledge.resources
+Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.vbproj.CoreCompileInputs.cache
