@@ -31,12 +31,13 @@ Partial Class aknowledge
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox1.Location = New System.Drawing.Point(18, 18)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(308, 372)
+        Me.TextBox1.Size = New System.Drawing.Size(460, 570)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
         '
@@ -44,9 +45,10 @@ Partial Class aknowledge
         '
         Me.Button1.Enabled = False
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(208, 390)
+        Me.Button1.Location = New System.Drawing.Point(312, 600)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 23)
+        Me.Button1.Size = New System.Drawing.Size(168, 35)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Load Tool"
         Me.Button1.UseVisualStyleBackColor = True
@@ -54,9 +56,10 @@ Partial Class aknowledge
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(12, 390)
+        Me.Button2.Location = New System.Drawing.Point(18, 600)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(63, 23)
+        Me.Button2.Size = New System.Drawing.Size(94, 35)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Exit Tool"
         Me.Button2.UseVisualStyleBackColor = True
@@ -64,23 +67,25 @@ Partial Class aknowledge
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(105, 394)
+        Me.CheckBox1.Location = New System.Drawing.Point(158, 606)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(97, 17)
+        Me.CheckBox1.Size = New System.Drawing.Size(139, 24)
         Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "I Acknowledge"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'aknowledge
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(332, 425)
+        Me.ClientSize = New System.Drawing.Size(498, 654)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "aknowledge"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User Acknowledgement"

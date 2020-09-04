@@ -74,10 +74,11 @@ Public Class Form2
                 Catch ex As Exception
 
                 End Try
+
+                CheckForIllegalCrossThreadCalls = False
                 Dim worker As New Thread(New ThreadStart(Function()
                                                              DeleteFiles()
                                                          End Function))
-                CheckForIllegalCrossThreadCalls = False
                 worker.Start()
             Else
                 Try
@@ -86,12 +87,13 @@ Public Class Form2
 
                 End Try
 
+                CheckForIllegalCrossThreadCalls = False
+
 
 
                 Dim worker As New Thread(New ThreadStart(Function()
                                                              DeleteFiles()
                                                          End Function))
-                CheckForIllegalCrossThreadCalls = False
                 worker.Start()
 
             End If
@@ -151,20 +153,24 @@ Public Class Form2
             If Directory.Exists(NOCC) Then
                 Directory.Delete(NOCC, True)
             End If
-            Label1.Text = "Stage: 8 of 17"
-            Thread.Sleep(1000)
-            'If Directory.Exists(temp1) Then
-            'Directory.Delete(temp1, True)
-            'End If
-            For Each file As IO.FileInfo In New IO.DirectoryInfo(temp1).GetFiles("*.*")
-                'If (Now - file.CreationTime).Days > Now Then
-                Try
+            Try
+                Label1.Text = "Stage: 8 of 17"
+                Thread.Sleep(1000)
+                'If Directory.Exists(temp1) Then
+                'Directory.Delete(temp1, True)
+                'End If
+                For Each file As IO.FileInfo In New IO.DirectoryInfo(temp1).GetFiles("*.*")
+                    'If (Now - file.CreationTime).Days > Now Then
+                    Try
                         file.Delete()
                     Catch
                         ' log exception or ignore '
                     End Try
-                'End If
-            Next
+                    'End If
+                Next
+            Catch ex As Exception
+
+            End Try
             Label1.Text = "Stage: 9 of 17"
             Thread.Sleep(2500)
             'If Directory.Exists(temp2) Then
@@ -234,7 +240,7 @@ Public Class Form2
             If p.Count > 0 Then
 
             Else
-                System.Diagnostics.Process.Start("explorer.exe")
+                'System.Diagnostics.Process.Start("explorer.exe")
             End If
             Label1.Text = "Reset Complete"
             PictureBox2.Visible = False
