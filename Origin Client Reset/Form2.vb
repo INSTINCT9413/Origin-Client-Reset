@@ -21,19 +21,30 @@ Public Class Form2
     Dim NC As String = localdisk & "Users\" & Environment.UserName & "\AppData\Roaming\Origin\NucleusCache"
     Dim WU As String = localdisk & "Users\" & Environment.UserName & "\AppData\Roaming\Origin\Widget Updates"
     Dim origin As String = localdisk & "Users\" & Environment.UserName & "\AppData\Local\Origin"
-    Dim originexe As String = localdisk & "Program Files (x86)\Origin\Origin.exe"
+    Dim originexe As String = localdisk & "Program Files\Origin\Origin.exe"
     Dim p As Process()
+
+
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         OriginForm1.Image = My.Resources.Origin_64px
         Me.Icon = My.Resources.icons8_Origin
         Me.Text = "Origin Client Reset Tool"
+        Label2.Text = "Origin Location: " & originexe
+        Label2.Visible = True
         If File.Exists(originexe) Then
 
         Else
-            MessageBox.Show("We could not find Origin!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+            Dim mess = MessageBox.Show("We could not find Origin!" & vbNewLine & "Do you have Origin installed?", "ERROR - Origin Not Found", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)
+            If mess = DialogResult.Yes Then
+                Dim fbd As New FolderBrowserDialog
+                fbd.ShowDialog()
+                originexe = fbd.SelectedPath & "\Origin.exe"
+                Label2.Text = "Origin Location: " & originexe
+            ElseIf mess = DialogResult.No Then
+                Application.Exit()
+            End If
 
-            Application.Exit()
         End If
     End Sub
 

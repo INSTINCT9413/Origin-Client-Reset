@@ -23,6 +23,7 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.OriginForm1 = New Origin_Client_Reset.OriginForm()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -40,6 +41,7 @@ Partial Class Form2
         Me.OriginForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.OriginForm1.BottomStyle = Origin_Client_Reset.OriginForm.BottomType.Rounded
         Me.OriginForm1.Colors = New Origin_Client_Reset.Bloom(-1) {}
+        Me.OriginForm1.Controls.Add(Me.Label2)
         Me.OriginForm1.Controls.Add(Me.Button1)
         Me.OriginForm1.Controls.Add(Me.Label1)
         Me.OriginForm1.Controls.Add(Me.PictureBox2)
@@ -65,6 +67,18 @@ Partial Class Form2
         Me.OriginForm1.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.OriginForm1.Transparent = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 7.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.Location = New System.Drawing.Point(42, 345)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(90, 12)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Origin Location"
+        Me.Label2.Visible = False
+        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Gainsboro
@@ -83,7 +97,7 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(171, 343)
+        Me.Label1.Location = New System.Drawing.Point(185, 251)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(79, 14)
         Me.Label1.TabIndex = 4
@@ -119,7 +133,7 @@ Partial Class Form2
         Me.OriginButton1.Customization = ""
         Me.OriginButton1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold)
         Me.OriginButton1.Image = Nothing
-        Me.OriginButton1.Location = New System.Drawing.Point(148, 263)
+        Me.OriginButton1.Location = New System.Drawing.Point(148, 273)
         Me.OriginButton1.Name = "OriginButton1"
         Me.OriginButton1.NoRounding = False
         Me.OriginButton1.Size = New System.Drawing.Size(152, 44)
@@ -166,4 +180,5 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
 End Class
