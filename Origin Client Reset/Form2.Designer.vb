@@ -133,7 +133,7 @@ Partial Class Form2
         Me.OriginButton1.Customization = ""
         Me.OriginButton1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold)
         Me.OriginButton1.Image = Nothing
-        Me.OriginButton1.Location = New System.Drawing.Point(148, 273)
+        Me.OriginButton1.Location = New System.Drawing.Point(148, 274)
         Me.OriginButton1.Name = "OriginButton1"
         Me.OriginButton1.NoRounding = False
         Me.OriginButton1.Size = New System.Drawing.Size(152, 44)
