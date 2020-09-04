@@ -21,7 +21,7 @@ Public Class Form2
     Dim NC As String = localdisk & "Users\" & Environment.UserName & "\AppData\Roaming\Origin\NucleusCache"
     Dim WU As String = localdisk & "Users\" & Environment.UserName & "\AppData\Roaming\Origin\Widget Updates"
     Dim origin As String = localdisk & "Users\" & Environment.UserName & "\AppData\Local\Origin"
-    Dim originexe As String = localdisk & "Program Files\Origin\Origin.exe"
+    Dim originexe As String = localdisk & "Program Files (x86)\Origin\Origin.exe"
     Dim p As Process()
 
 
@@ -30,22 +30,28 @@ Public Class Form2
         OriginForm1.Image = My.Resources.Origin_64px
         Me.Icon = My.Resources.icons8_Origin
         Me.Text = "Origin Client Reset Tool"
-        Label2.Text = "Origin Location: " & originexe
+        'Label2.Text = "Origin Location: " & originexe
         Label2.Visible = True
         If File.Exists(originexe) Then
 
         Else
-            Dim mess = MessageBox.Show("We could not find Origin!" & vbNewLine & "Do you have Origin installed?", "ERROR - Origin Not Found", MessageBoxButtons.YesNo, MessageBoxIcon.Stop)
+            Dim mess = MessageBox.Show("We could not find Origin!" & vbNewLine & vbNewLine & "Origin is usually installed under: " & vbNewLine & originexe & vbNewLine & vbNewLine & "Do you have Origin installed?", "ERROR - Origin Not Found", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
             If mess = DialogResult.Yes Then
                 Dim fbd As New FolderBrowserDialog
                 fbd.ShowDialog()
                 originexe = fbd.SelectedPath & "\Origin.exe"
-                Label2.Text = "Origin Location: " & originexe
+                If File.Exists(originexe) Then
+                Else
+                    MessageBox.Show("We could not find origin.exe in the folder you selected!" & vbNewLine & vbNewLine & "We can not continue, please try again", "ERROR - Origin Not Found", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                    Application.Exit()
+                End If
+
             ElseIf mess = DialogResult.No Then
                 Application.Exit()
             End If
 
         End If
+        Label2.Text = "Origin Location: " & originexe
     End Sub
 
 
