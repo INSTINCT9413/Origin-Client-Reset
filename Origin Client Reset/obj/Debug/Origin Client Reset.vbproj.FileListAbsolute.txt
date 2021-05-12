@@ -12,3 +12,16 @@ Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\D
 Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.AboutBox1.resources
 Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.aknowledge.resources
 Z:\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.vbproj.CoreCompileInputs.cache
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.exe.config
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.exe
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.pdb
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\bin\Debug\Origin Client Reset.xml
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.AboutBox1.resources
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.aknowledge.resources
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.Form2.resources
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin_Client_Reset.Resources.resources
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.vbproj.GenerateResource.cache
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.vbproj.CoreCompileInputs.cache
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.exe
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.xml
+D:\External Drive I\Programs\Visual Studio\Projects\Origin Client Reset\Origin Client Reset\obj\Debug\Origin Client Reset.pdb

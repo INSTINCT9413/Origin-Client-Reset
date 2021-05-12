@@ -120,6 +120,7 @@ Public Class Form2
     End Sub
     Public Sub DeleteFiles()
         Try
+            OriginTopButton1.Enabled = False
             OriginButton1.Enabled = False
             If Directory.Exists(AC) Then
                 Directory.Delete(AC, True)
@@ -250,6 +251,7 @@ Public Class Form2
             End If
             Label1.Text = "Reset Complete"
             PictureBox2.Visible = False
+            OriginTopButton1.Enabled = True
             OriginButton1.Enabled = True
             OriginButton1.Text = "NEXT"
         Catch ex As Exception
@@ -264,5 +266,13 @@ Public Class Form2
 
     Private Sub OriginTopButton1_Click(sender As Object, e As EventArgs) Handles OriginTopButton1.Click
         Application.Exit()
+    End Sub
+
+    Private Sub Label1_TextChanged(sender As Object, e As EventArgs) Handles Label1.TextChanged
+        Label1.Location = New Point((ClientSize.Width - Label1.Width) \ 2, 257)
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
