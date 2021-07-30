@@ -9,4 +9,4 @@ This tool is open-source and placed here for others to learn from.</p>
 <small>Origin will sit here and load for a long time and never load the UI.</small>
 <img src="https://jacobbrookhouse.me/DominionStudios/assets/external/Origin Stuck.PNG" alt="PNG of Origin Loading" title="PNG of Origin Loading"></img>
 <p>Video showing Origin Client Rest Tool in action.</p>
-https://video.horizonsocial.media/v/WzaBjj
+<a href="https://video.horizonsocial.media/v/WzaBjj">https://video.horizonsocial.media/v/WzaBjj</a>
