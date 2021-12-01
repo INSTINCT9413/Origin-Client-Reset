@@ -91,6 +91,12 @@
     <Compile Include="aknowledge.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClientResetAd.Designer.vb">
+      <DependentUpon>ClientResetAd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientResetAd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form2.Designer.vb">
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aknowledge.resx">
       <DependentUpon>aknowledge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientResetAd.resx">
+      <DependentUpon>ClientResetAd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
@@ -212,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loading_small88.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3688457_refresh_sync_map_reload_rotate_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

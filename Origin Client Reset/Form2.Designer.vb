@@ -23,6 +23,7 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.OriginForm1 = New Origin_Client_Reset.OriginForm()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,6 +32,7 @@ Partial Class Form2
         Me.OriginButton1 = New Origin_Client_Reset.OriginButton()
         Me.OriginTopButton1 = New Origin_Client_Reset.OriginTopButton()
         Me.OriginForm1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,6 +43,7 @@ Partial Class Form2
         Me.OriginForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.OriginForm1.BottomStyle = Origin_Client_Reset.OriginForm.BottomType.Rounded
         Me.OriginForm1.Colors = New Origin_Client_Reset.Bloom(-1) {}
+        Me.OriginForm1.Controls.Add(Me.PictureBox3)
         Me.OriginForm1.Controls.Add(Me.Label2)
         Me.OriginForm1.Controls.Add(Me.Button1)
         Me.OriginForm1.Controls.Add(Me.Label1)
@@ -66,6 +69,18 @@ Partial Class Form2
         Me.OriginForm1.Text = "Origin Client Reset Tool"
         Me.OriginForm1.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.OriginForm1.Transparent = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox3.Image = Global.Origin_Client_Reset.My.Resources.Resources._3688457_refresh_sync_map_reload_rotate_icon
+        Me.PictureBox3.Location = New System.Drawing.Point(380, 52)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(45, 45)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 7
+        Me.PictureBox3.TabStop = False
         '
         'Label2
         '
@@ -167,6 +182,7 @@ Partial Class Form2
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.OriginForm1.ResumeLayout(False)
         Me.OriginForm1.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -181,4 +197,5 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

@@ -27,6 +27,11 @@ Origin Client Reset
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Origin_Client_Reset.My.Resources.Resources._3688457_refresh_sync_map_reload_rotate_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Origin_Client_Reset.My.Resources.Resources._687474703a2f2f662e636c2e6c792f6974656d732f32473146315a304d306b306832553356317033392f535650726f67726573734855442e676966">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -43,6 +48,11 @@ Origin Client Reset
 </summary>
 </member>
 <member name="P:Origin_Client_Reset.My.Resources.Resources.bolt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Origin_Client_Reset.My.Resources.Resources.Capture">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

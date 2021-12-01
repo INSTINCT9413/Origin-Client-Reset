@@ -275,4 +275,10 @@ Public Class Form2
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim CR As New ClientResetAd
+        CR.ShowDialog()
+
+    End Sub
 End Class
