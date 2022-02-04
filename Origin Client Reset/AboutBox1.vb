@@ -26,4 +26,15 @@
     Private Sub TableLayoutPanel_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel.Paint
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Dim message = MessageBox.Show("Thank you for considering donating!" + vbNewLine _
+                                      + "If you would like to donate because this program was useful or helped in anyway please click 'Yes' otherwise click 'No'.", "Donating?", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+        If message = DialogResult.Yes Then
+            Diagnostics.Process.Start("https://www.paypal.com/donate/?hosted_button_id=TSMKFBSV5KUWG")
+        Else
+
+        End If
+
+    End Sub
 End Class
